@@ -1,0 +1,8 @@
+{
+  "name": "Stonks",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "f6e2a991"
+}
