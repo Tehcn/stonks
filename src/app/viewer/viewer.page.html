@@ -10,11 +10,19 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">{{ view }}</ion-title>
+      <ion-title size="large">{{ view }}a</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-
+  <div id="container" [ngSwitch]="view">
+    <div class="container" *ngSwitchCase="'current'">
+      current
+    </div>
+    <div class="container" *ngSwitchCase="'all'">
+      all
+    </div>
+    <div id="container" *ngSwitchDefault>
+      what ({{ view }})
+    </div>
   </div>
 </ion-content>
